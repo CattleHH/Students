@@ -14,7 +14,7 @@
 #        if i == 0 or i==4 or j == 0 or j == 4:
 #            print('*',end=' ')
 #        else:
-#            print(' ',end=' ')s
+#            print(' ',end=' ')
 #    print()
 
 # 直角三角形
@@ -177,6 +177,22 @@
 #       print('',end=' ')
 #     print()
 
+for i in range(4):
+
+   for j in range(3):
+       if j == 0 :
+           print('*',end=' ')
+       elif i == 0 or i == 3:
+           if j < 2:
+              print('*',end=' ')
+           else:
+               break
+       elif j > 1 :
+           print('*', end=' ')
+       else:
+           print(' ',end=' ')
+   print()
+
 # 大B
 # for i in range(3):
 #     for j in range(2):
@@ -228,28 +244,28 @@
 #     print()
 
 # R
-for i in range(3):
-    for j in range(2):
-      if i == 0:
-          print('*', end=' ')
-      elif j == 0  and i < 3:
-         print('*', end=' ')
-    for m in range(2):
-      if i == 1 and m == 1:
-         print('*',end='')
-      elif i == 2 and m == 1:
-         print('*', end='')
-      print(' ',end=' ')
-    print()
-for i in range(3):
-    for j in range(2):
-      if i == 0  or j == 0:
-         print('*', end=' ')
-    for m in range(i+2):
-      if i == 1 and m == 2:
-         print('*',end='')
-      elif i == 2 and m == 3:
-          print('*', end='')
-      print('',end=' ')
-    print()
+# for i in range(3):
+#     for j in range(2):
+#       if i == 0:
+#           print('*', end=' ')
+#       elif j == 0  and i < 3:
+#          print('*', end=' ')
+#     for m in range(2):
+#       if i == 1 and m == 1:
+#          print('*',end='')
+#       elif i == 2 and m == 1:
+#          print('*', end='')
+#       print(' ',end=' ')
+#     print()
+# for i in range(3):
+#     for j in range(2):
+#       if i == 0  or j == 0:
+#          print('*', end=' ')
+#     for m in range(i+2):
+#       if i == 1 and m == 2:
+#          print('*',end='')
+#       elif i == 2 and m == 3:
+#           print('*', end='')
+#       print('',end=' ')
+#     print()
 
